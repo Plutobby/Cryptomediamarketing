@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'font-bold';
+    src: url('http://127.0.0.1:5501/css/fonts/HelveticaBold.ttf');
+    /* You can also include other font formats like woff, woff2, etc. */
+ }
+.contact-us-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .contact-us-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  
+  .contact-us-form label {
+    font-size: 19px;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .contact-us-form input,
+  .contact-us-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px #ccc;
+    font-size: 16px;
+    font-style: 'font-bold';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: lighter;
+  }
+  
+  .contact-us-form button[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #ffec09;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-style: 'font-bold';
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+  }
+  
+  .contact-us-form button[type="submit"]:hover {
+    background-color: #3e8e41;
+  }
+  

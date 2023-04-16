@@ -1,0 +1,332 @@
+body {
+    font-size: 20px;
+    font-weight: bolds;
+}
+@font-face {
+    font-family: 'font-bold';
+    src: url('http://127.0.0.1:5501/css/fonts/HelveticaBold.ttf');
+    /* You can also include other font formats like woff, woff2, etc. */
+}
+
+.welcome-container {
+    position: relative;
+    background-color: #5f9ea0; /* Set the background color of the container */
+    border-bottom-left-radius: 50% 20px; /* Set a larger border radius for the bottom left corner */
+    border-bottom-right-radius: 50% 20px; /* Set a larger border radius for the bottom right corner */
+    overflow: hidden; /* Hide any overflow content */
+  }
+  
+  .welcome-container::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    bottom: -30px; /* Set the position of the wave effect */
+    left: 0;
+    right: 0;
+    height: 50px; /* Set the height of the wave effect */
+    background-color: inherit; /* Set the background image of the wave */
+    background-repeat: repeat-x; /* Repeat the image horizontally */
+    transform: rotate(180deg); /* Flip the wave effect */
+    z-index: -1; /* Set the z-index to -1 to keep the wave behind the container */
+  }
+  .welcome-header {
+    font-family: 'font-bold';
+    text-transform: uppercase;
+    font-size: 35px;
+  }
+  .welcome-btn {
+    color: midnightblue !important;
+    text-transform: uppercase;
+    padding: 10px 30px !important;
+  }
+  .welcome-btn:hover {
+    background-color: white !important;
+    border: 1px solid #dd7711;
+  }
+  .welcome-btn span {
+    text-transform: uppercase;
+    color: black !important;
+  }
+ 
+
+
+
+/* Define the overall style for the section */
+.why-choose-us-container {
+    background-color: #f8f8f8; /* light background color */
+    padding: 4rem; /* add some padding */
+    text-align: center;
+    
+    
+  }
+  
+  .why-choose-us-container h2 {
+    font-weight: bold;
+    margin: 20px;
+    font-size: 4rem;
+    text-transform: capitalize;
+    font-family: 'font-bold';
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+  }
+  /* Set up the container for the stories using flexbox */
+  .containers-wrapper {
+    display: flex;
+    justify-content: space-between; /* evenly distribute the boxes horizontally */
+    align-items: center; /* center the boxes vertically */
+    flex-wrap: wrap; /* allow the boxes to wrap to a new line if necessary */
+    max-width: 1200px; /* limit the width of the container */
+    margin: 0 auto; /* center the container horizontally */
+  }
+
+  /* Style the individual story containers */
+.story-container {
+    background-color: #fff; /* white background color for each box */
+    padding: 1.5rem; padding-top: 30px;
+    border-radius: 2rem; /* rounded corners */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); add a subtle shadow */
+    margin: 20px;
+    margin-bottom: 1.5rem;
+    width: 20%; /* make each box take up half of the available space */
+    min-width: 300px; /* set a minimum width to prevent the boxes from getting too small */
+    height: 400px; overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'font-bold';
+  }
+  
+/* Media Query for small screens (portrait phones) */
+@media only screen and (min-width: 320px) {
+    .story-container {
+      width: 90%; /* take up almost full width on small screens */
+      margin: 5%;
+      height: auto;
+  }
+  
+  /* Media Query for medium screens (landscape phones and tablets) */
+  @media only screen and (min-width: 600px) {
+    .story-container {
+      width: 45%; /* take up almost half width on medium screens */
+      margin: 10px; /* add a small margin between the boxes */
+      height: 400px; 
+    }
+  }
+  
+  /* Media Query for large screens (desktops) */
+  @media only screen and (min-width: 1024px) {
+    .story-container {
+      width: 30%; /* take up almost one-third width on large screens */
+      margin: 10px; /* add a small margin between the boxes */
+      height: 400px;    
+    }
+  }
+  
+  /* Style the header and content of each story */
+  .story-header {
+    font-size: 2rem;
+    margin: 0; font-weight: bold;
+    text-align: center;
+    color: black;
+    display: inline;
+    padding: 20px;
+    background-color: #ffec09;
+    border-top-left-radius: 120px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 95px;
+    border-bottom-right-radius: 175px;
+  }
+  
+  .story-content {
+    font-size: 1.9rem;
+    line-height: 1.5;
+    color: black;
+    margin-top: 25px;
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Define the overall style for the section */
+.our-services-container {
+    background-color: #f8f8f8; /* light background color */
+    padding: 2rem; /* add some padding */
+    text-align: center;
+  }
+.our-services-container h2 {
+    font-weight: bold;
+    margin: 20px;
+    font-size: 4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+  }
+
+  .our-services-container .story-header {
+    background-color: transparent;
+  }
+  
+  .our-services-container .story-container {
+    background-color: #fff;
+  }
+}
+
+
+
+
+
+.extra-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .previous-partners, .core-team {
+    background-color: #f9f9f9;
+    padding: 80px 0;
+    font-style: 'font-bold';
+
+  }
+  
+  .extra-container h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .extra-container ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .extra-container li {
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+     font-style: 'font-bold';
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  
+  /*
+  li:before {
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 5px;
+    color: #00a8ff;
+    font-size: 28px;
+  }
+  */
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  body {
+    background-color: #f5f5f5;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em 1em;
+    text-align: center;
+  }
+  .column {
+    width: 100%;
+    padding: 0.5em 0;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 3.5em;
+    color: black;
+  }
+  .card {
+    box-shadow: 0 0 2.4em rgba(25, 0, 58, 0.1);
+    padding: 3.5em 1em;
+    border-radius: 0.6em;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: #ffffff;
+  }
+  .card .img-container {
+    width: 8em;
+    height: 8em;
+    background-color: #ffec09;
+    padding: 0.5em;
+    border-radius: 50%;
+    margin: 0 auto 2em auto;
+  }
+  .card img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  .card h3 {
+    font-weight: 500;
+  }
+  .card p {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin: 0.5em 0 2em 0;
+    letter-spacing: 2px;
+  }
+  .icons {
+    width: 50%;
+    min-width: 180px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+  }
+  .card a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 1.4em;
+    cursor: pointer;
+  }
+  .card:hover {
+    background: linear-gradient(#292929, #292929);
+    color: #ffffff;
+  }
+  .card:hover .img-container {
+    transform: scale(1.15);
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 1em 7em;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em;
+    }
+    .card {
+      padding: 5em 1em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+      padding: 0 1em;
+    }
+  }
